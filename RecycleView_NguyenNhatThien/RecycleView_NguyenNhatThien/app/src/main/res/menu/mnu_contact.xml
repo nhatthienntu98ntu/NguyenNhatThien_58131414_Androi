@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Create User"
+        android:id="@+id/mnu_Create"
+        android:icon="@drawable/ic_action_add_user"
+        app:showAsAction="ifRoom|withText"
+        />
+    <item android:title="Exit"
+        app:showAsAction="ifRoom|withText"
+        android:icon="@drawable/ic_action_add_exit"
+        android:id="@+id/mnu_exit"/>
+</menu>
