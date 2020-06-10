@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment_Cart_Activity">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Cart"
+        android:textSize="30sp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp"/>
+
+
+    <TextView
+        android:id="@+id/txtListCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List"
+        android:textSize="18sp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rcvCart"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imgSubmit"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_action_submit"
+            android:layout_weight="1"/>
+
+
+
+        <ImageView
+            android:id="@+id/imgDelete_cart"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_action_delete"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

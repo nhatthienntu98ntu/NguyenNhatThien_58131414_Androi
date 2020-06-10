@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_cart"
+    app:startDestination="@id/fragMent_Main_Activity">
+
+    <fragment
+        android:id="@+id/fragMent_Main_Activity"
+        android:name="vn.edu.ntu.nhatthien.recycleview59cntt1.FragMent_Main_Activity"
+        android:label="fragment_frag_ment__main__activity"
+        tools:layout="@layout/fragment_frag_ment__main__activity" >
+        <action
+            android:id="@+id/action_fragMent_Main_Activity_to_fragment_Cart_Activity"
+            app:destination="@id/fragment_Cart_Activity"
+            app:popUpTo="@id/action_fragMent_Main_Activity_to_fragment_Cart_Activity"/>
+        <action
+            android:id="@+id/action_fragMent_Main_Activity_to_productFragment"
+            app:destination="@id/productFragment"
+            app:popUpTo="@id/fragMent_Main_Activity"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Cart_Activity"
+        android:name="vn.edu.ntu.nhatthien.recycleview59cntt1.Fragment_Cart_Activity"
+        android:label="fragment__cart__activity"
+        tools:layout="@layout/fragment__cart__activity" >
+        <action
+            android:id="@+id/action_fragment_Cart_Activity_to_fragMent_Main_Activity"
+            app:destination="@id/fragMent_Main_Activity"
+            app:popUpTo="@layout/fragment_frag_ment__main__activity"/>
+        <action
+            android:id="@+id/action_fragment_Cart_Activity_to_xacNhan"
+            app:destination="@id/xacNhan"
+            app:popUpTo="@id/fragment_Cart_Activity"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="vn.edu.ntu.nhatthien.recycleview59cntt1.ProductFragment"
+        android:label="fragment_product"
+        tools:layout="@layout/fragment_product" >
+        <action
+            android:id="@+id/action_productFragment_to_fragMent_Main_Activity"
+            app:destination="@id/fragMent_Main_Activity"/>
+    </fragment>
+    <fragment
+        android:id="@+id/xacNhan"
+        android:name="vn.edu.ntu.nhatthien.recycleview59cntt1.XacNhan"
+        android:label="fragment_xac_nhan"
+        tools:layout="@layout/fragment_xac_nhan" />
+</navigation>
